@@ -93,7 +93,7 @@ export default function Home() {
 
   const handleCountryClick = (forecast: any) => {
     fetchWeeklyWeather(forecast.location);
-    const futureDate = forecast.date2;
+    const futureDate = forecast.date1;
     const timeLeft = calculateTimeLeft(futureDate);
     setTimeLeft(timeLeft);
   };
